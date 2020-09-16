@@ -1,0 +1,20 @@
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">AddReview</h4>
+        <button type="button" (click)="close.emit()" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <input type="text" placeholder="Enter Your Name" formControlName="name">
+            <input type="text" placeholder="Location" formControlName="location" >
+            <input type="number" placeholder="ratting" formControlName="number" min="1" max="5">
+            <textarea name="message" placeholder="message" formControlName="message"></textarea>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-warning">send</button>
+              <button type="button" (click)="close.emit()" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-body" *ngFor="let data of ResReviewObj">
+      <h5 class="card-text">{{data.reviews[0].name}}</h5>
+      <p class="card-text">{{data.address}}</p>
+      <p class="card-text">{{data.reviews[0].rating}}stars {{data.reviews[0].date}}</p>
+      <p class="card-text">{{data.reviews[0].comments}}</p>
+    </div>
+    <div class="card-body" *ngFor="let data of ResReviewObj">
+      <h5 class="card-text">{{data.reviews[1].name}}</h5>
+      <p class="card-text">{{data.address}}</p>
+      <p class="card-text">{{data.reviews[1].rating}}stars {{data.reviews[0].date}}</p>
+      <p class="card-text">{{data.reviews[1].comments}}</p>
+    </div>
+    <div class="card-body" *ngFor="let data of ResReviewObj">
+      <h5 class="card-text">{{data.reviews[2].name}}</h5>
+      <p class="card-text">{{data.address}}</p>
+      <p class="card-text">{{data.reviews[2].rating}}stars {{data.reviews[0].date}}</p>
+      <p class="card-text">{{data.reviews[2].comments}}</p>
+    </div>
+    <div class="card-body" *ngFor="let data of formReviewObj">
+      <h5 class="card-text">{{data.name}}</h5>
+      <p class="card-text">{{data.location}}</p>
+      <p class="card-text">{{data.number}} stars</p>
+      <p class="card-text">{{data.message}}
+        <span><button class="btn btn-primary" (click)="openModal('custom-modal-1')">edit</button></span></p>
+    </div>
+    <div>
+    <button type="button" class="btn btn-primary mx-3" (click)="openModal('custom-modal-1')">AddNewUser</button>
+    </div>
+</div>
+<app-model (close)="openModel = false" *ngIf="openModel"></app-model>
+
+

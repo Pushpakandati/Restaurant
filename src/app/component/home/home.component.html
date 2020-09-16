@@ -1,0 +1,12 @@
+<div class="card" style="width: 38rem;">
+    <div class="card-body" *ngFor="let data of restaurantCloneData">
+      <h5 class="card-title"><a routerLink="" (click)="navigateToReview(data)">{{data.name}}</a></h5>
+      <p class="card-text">{{data.reviews[0].rating}} Stars</p>
+      <p class="card-text">{{data.address}}</p>
+    </div>
+</div>
+<footer class="page-footer font-small bg-secondary">
+  <div class="footer-copyright text-center py-3">
+    footerPage
+  </div>
+</footer>
