@@ -1,5 +1,12 @@
 .imgSec,img{
 	width: 350px;
-	display: inline-block;
-	height: auto;
+	margin: 10px;
+	height: 230px;
+}
+.images {
+    display: inline-flex;
+    justify-content: space-around;
+}
+.photos {
+    margin: 10px 0px;
 }

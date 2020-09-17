@@ -1,8 +1,13 @@
-<div class="card" style="width: 38rem;">
-    <div class="card-body" *ngFor="let data of restaurantCloneData">
-      <h5 class="card-title"><a routerLink="" (click)="navigateToReview(data)">{{data.name}}</a></h5>
-      <p class="card-text">{{data.reviews[0].rating}} Stars</p>
-      <p class="card-text">{{data.address}}</p>
+<div class="card" style="width: 40rem;">
+    <div class="card-body" *ngFor="let data of restaurantCloneData" id="restaurantInfo">
+    	<div class="contentSec">
+    		<h5 class="card-title"><a routerLink="" (click)="navigateToReview(data)">{{data.name}}</a></h5>
+      		<p class="card-text">{{data.reviews[0].rating}} Stars</p>
+      		<p class="card-text">{{data.address}}</p>
+    	</div>
+    	<div class="imgSec">
+    		<img src="./../../../assets/{{data.photograph}}" id="imgSrc">
+    	</div>
     </div>
 </div>
 <footer class="page-footer font-small bg-secondary">

@@ -1,0 +1,8 @@
+div#restaurantInfo {
+    display: flex;
+    justify-content: space-between;
+}
+#imgSrc{
+	width: 200px;
+	height: auto;
+}

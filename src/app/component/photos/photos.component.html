@@ -1,5 +1,8 @@
 <div class="photos">
-	<div *ngFor="let img of imgUrl" class="imgSec">
-		<img src="{{img}}" alt="imgNotUpload" id="imgUpload">
+	<div *ngFor="let img of imgUrl" class="images">
+		<img src="{{img}}" alt="imgNotUpload" id="imgSec">
+	</div>
+	<div *ngFor="let data of restaurantCloneData" class="images">
+		<img src="./../../../assets/{{data.photograph}}" id="imgSec">
 	</div>
 </div>
