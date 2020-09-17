@@ -23,6 +23,9 @@
       <p class="card-text">{{data.number}} stars</p>
       <p class="card-text">{{data.message}}
         <span><button class="btn btn-primary" (click)="openModal('custom-modal-1')">edit</button></span></p>
+      <div>
+        <app-image-uploder [activeColor]="'orangered'" [baseColor]="'lightgray'"></app-image-uploder>
+      </div>
     </div>
     <div>
     <button type="button" class="btn btn-primary mx-3" (click)="openModal('custom-modal-1')">AddNewUser</button>
