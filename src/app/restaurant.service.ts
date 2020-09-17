@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
 export class RestaurantService {
   resData:any=[];
   formData:any=[];
+  imgPath:any=[];
   createFormData:any=[];
 
   constructor(private httpService: HttpClient) {
@@ -29,6 +30,12 @@ export class RestaurantService {
   }
   getFormData(){
     return this.formData;
+  }
+  setImagePath(val){
+    this.imgPath.push(val);
+  }
+  getImagePath(){
+    return this.imgPath;
   }
 }
 

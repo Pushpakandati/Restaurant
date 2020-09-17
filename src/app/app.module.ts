@@ -10,6 +10,8 @@ import { ReviewComponent } from './component/review/review.component';
 import { ComponentComponent } from './component/component.component';
 import { ModelComponent } from './component/model/model.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { ImageUploderComponent } from './component/image-uploder/image-uploder.component';
+import { PhotosComponent } from './component/photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     HomeComponent,
     ReviewComponent,
     ComponentComponent,
-    ModelComponent
+    ModelComponent,
+    ImageUploderComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
